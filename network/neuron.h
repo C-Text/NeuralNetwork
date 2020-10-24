@@ -6,6 +6,7 @@
 #define NN_NEURON_H
 
 typedef struct neuron_t {
+  double dias;
   double value;
   double derivedValue;
 } neuron;

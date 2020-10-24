@@ -5,8 +5,7 @@
 #ifndef NN_METHOD_H
 #define NN_METHOD_H
 
-#include "../util.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 void softmax(double *inputs, size_t size);
 

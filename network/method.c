@@ -3,10 +3,11 @@
 //
 
 #include "method.h"
+#include "../util.h"
 #include <math.h>
 
 void softmax(double *inputs, size_t size) {
-  if (0 > size > sizeof(inputs) / sizeof(double))
+  if (size == 0)
     return;
 
   double m = find_min(inputs, size);
