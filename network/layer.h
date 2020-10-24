@@ -7,6 +7,7 @@
 
 #include "neuron.h"
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct layer_t {
 
@@ -16,5 +17,7 @@ typedef struct layer_t {
 } layer;
 
 layer create_layer(size_t number_of_neurons);
+
+void lprint(struct layer_t *l, bool pretty);
 
 #endif // NN_LAYER_H

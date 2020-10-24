@@ -1,6 +1,7 @@
-#include "tests/test.h"
+#include "network/layer.h"
 
 int main(void) {
-  int res = tests();
-  return res;
+  layer l = create_layer(10);
+  lprint(&l, false);
+  return 0;
 }

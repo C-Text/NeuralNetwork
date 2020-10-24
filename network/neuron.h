@@ -5,12 +5,16 @@
 #ifndef NN_NEURON_H
 #define NN_NEURON_H
 
+#include <stdbool.h>
+
 typedef struct neuron_t {
-  double dias;
+  double bias;
   double value;
-  double derivedValue;
+  double derived_value;
 } neuron;
 
 neuron create_neuron();
+
+void nprint(struct neuron_t *n, bool pretty);
 
 #endif // NN_NEURON_H
